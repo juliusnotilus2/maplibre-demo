@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Carte MapLibre GL</title>
+  <title>Carte MapLibre - Europe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.css" rel="stylesheet" />
   <style>
@@ -16,9 +16,9 @@
   <script>
     const map = new maplibregl.Map({
       container: 'map',
-      style: 'https://demotiles.maplibre.org/style.json', // style libre
-      center: [2.35, 48.85], // Paris
-      zoom: 12
+      style: 'https://demotiles.maplibre.org/style.json',
+      center: [10, 50],  // Europe centrale
+      zoom: 3.2           // Zoom faible pour voir l’Europe entière
     });
   </script>
 </body>

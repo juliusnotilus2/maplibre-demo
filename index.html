@@ -2,9 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Ma Carte Personnalisée - France</title> <!-- Titre modifié pour refléter le contenu -->
+  <title>Test de Base MapLibre</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- J'ai mis à jour vers une version plus récente de MapLibre, mais la vôtre fonctionnera aussi -->
   <link href="https://unpkg.com/maplibre-gl@4.1.3/dist/maplibre-gl.css" rel="stylesheet" />
   <style>
     body, html { margin: 0; padding: 0; height: 100%; }
@@ -17,15 +16,9 @@
   <script>
     const map = new maplibregl.Map({
       container: 'map',
-      
-      // --- C'EST LA SEULE LIGNE À MODIFIER ---
-      // Remplacez l'URL de démonstration par l'URL "Raw" de VOTRE Gist
       style: 'https://gist.githubusercontent.com/juliusnotilus2/dc2e1a64242b1b8f9070f8407eff28a1/raw/cde41cde75e635f7778216e8e665b3e7b1dabe5e/style.json',
-      
-      
-      // Centrez la carte sur la zone pour laquelle vous avez des données (l'Île-de-France)
-      center: [2.35, 48.85],  // Coordonnées de Paris
-      zoom: 8                  // Un zoom adapté pour voir l'Île-de-France
+      center: [10, 50],
+      zoom: 3
     });
   </script>
 </body>
